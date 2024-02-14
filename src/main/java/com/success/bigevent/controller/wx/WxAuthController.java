@@ -46,6 +46,7 @@ public class WxAuthController {
             hashedBytes = sha1.digest(input.getBytes());
         }catch (Exception e){
 
+
         }
         // 将字节数组转换为十六进制字符串
         return bytesToHex(hashedBytes);
