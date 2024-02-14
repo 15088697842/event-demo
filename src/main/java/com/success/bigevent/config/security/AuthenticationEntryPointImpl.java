@@ -24,7 +24,7 @@ public class AuthenticationEntryPointImpl implements AuthenticationEntryPoint {
                          AuthenticationException authException) throws IOException, ServletException {
         String message = "";
         if(authException instanceof BadCredentialsException){
-            message = "用户账号或者密码错误";
+            message = "用户账号或者密码错误 ";
         }
         if(authException instanceof InsufficientAuthenticationException){
             message = "账号未登陆";
